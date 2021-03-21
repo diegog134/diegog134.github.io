@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Curriculo Diego Giron Barbosa</title>
+        <meta name="autor" content="Diego Giron Barbosa">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+    <body class="body">
+        <header>
+            <nav>
+                <div id="menuToggle">
+                  <input type="checkbox" />                
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <ul id="menu">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./dados.html">Dados</a></li>
+                    <li><a href="./qualificações.html">Qualificações</a></li>
+                  </ul>
+                </div>
+                <button id="claroescuro" class="claroescuro">claro</button>
+                <button id="escuroclaro" class="escuroclaro">escuro</button>
+            </nav>
+        </header>
+        <section>
+            <h1>QUALIFICAÇÕES</h1>
+                <p >Sou aluno de informática no Institudo Federal de São paulo, no campus São Paulo ,com isso desenvolvi competências em algumas areas de  TI ,como:
+                    Conhecimentos em linguagens de programação:
+                    <ul class="lista">
+                        <li>Java</li>
+                        <li>C#</li>
+                        <li>C</li>
+                        <li>HTML BÁSICO</li>
+                        <li>CSS BÁSICO</li>
+                        <li>SQL</li>
+                    </ul>
+                    
+                  <p>
+                    Também obtive conhecimento em redes de computadores, além de aprender o funcionamento de ferramentas do pacote Office como:
+                </p>
+                <ul class="lista">
+                    <li>EXCEL intermediário-avançado</li>
+                    <li>WORD</li>
+                    <li>POWER POINT</li>
+                    <li>ACESS</li>
+                </ul>
+                <p>
+                    Tenho também inglês básico-intermediário (curso o módulo avançado no CNA, uma escola de inglês)
+                </p>
+        </section>
+    </body>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           
+            $("#escuroclaro").click(()=>{
+                $("body").removeClass("body");
+                $("body").addClass("body2");
+                
+                $("header").addClass("header2");
+                $("#claroescuro").addClass("escurinho");
+                $("#escuroclaro").addClass("escurinho");
+            });
+            $("#claroescuro").click(()=>{
+                $("body").removeClass("body2");
+                $("body").addClass("body");
+                $("header").removeClass("header2");
+                $("#escuroclaro").removeClass("escurinho");
+                $("#claroescuro").removeClass("escurinho");
+            });
+        })
+        </script>
+</html>

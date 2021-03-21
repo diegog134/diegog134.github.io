@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Curriculo Diego Giron Barbosa</title>
+        <meta name="autor" content="Diego Giron Barbosa">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+    <body class="body">
+        <header>
+            <nav>
+                <div id="menuToggle">
+                  <input type="checkbox"/>                
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <ul id="menu">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./dados.html">Dados</a></li>
+                    <li><a href="./qualificações.html">Qualificações</a></li>
+                  </ul>
+                </div>
+                <button id="claroescuro" class="claroescuro">claro</button>
+                <button id="escuroclaro" class="escuroclaro">escuro</button>
+            </nav>
+        </header>
+        <section> 
+            <h1 id="color">DADOS PESSOAIS</h1>
+                <ul class="lista">
+                    <li>Nascimento:07/05/2003</li>
+                    <li>Número:11 94433-4003</li>
+                    <li>Email: diegog13407@gmail.com</li>
+                    <li>GitHub:diegog134</li>
+                </ul>
+            <h1>
+                EXPERIÊNCIA PROFISSIONAL
+            </h1>
+            <p class="p2">
+                Participo como voluntário no projeto: Integração da Comunidade Externa e Interna e a Área dos cursos de Informática do IFSP-SP-desenvolvimento de site de eventos e divulgação dos tais.
+Projetos desenvolvidos:MAPIF(está no GitHub)
+Futebol de Rua(está no Github)
+            </p>
+            
+        </section>
+    </body>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           
+            $("#escuroclaro").click(()=>{
+                $("body").removeClass("body");
+                $("body").addClass("body2");
+                
+                $("header").addClass("header2");
+                $("#claroescuro").addClass("escurinho");
+                $("#escuroclaro").addClass("escurinho");
+            });
+            $("#claroescuro").click(()=>{
+                $("body").removeClass("body2");
+                $("body").addClass("body");
+                $("header").removeClass("header2");
+                $("#escuroclaro").removeClass("escurinho");
+                $("#claroescuro").removeClass("escurinho");
+            });
+        })
+        </script>
+</html>
